@@ -64,3 +64,25 @@ kotlinFrontend {
         dependency("js-cookie", "2.2.0")
     }
 }
+
+compileKotlin2Js {
+    kotlinOptions.metaInfo = true
+    kotlinOptions.outputFile = "$project.buildDir.path/js/${project.name}.js"
+    kotlinOptions.moduleKind = 'umd'
+}
+
+compileTestKotlin2Js {
+    kotlinOptions.metaInfo = true
+    kotlinOptions.outputFile = "$project.buildDir.path/js-tests/${project.name}-tests.js"
+    kotlinOptions.moduleKind = 'umd'
+}
+
+task copyResources(type: Copy) {
+    from "src/main/resources"
+    into file(buildDir.path + "/js")
+}
+
+task copyResourcesForTests(type: Copy) {
+    from "src/main/resources"
+    into file(buildDir.path + "/js-tests/")
+}
