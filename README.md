@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/fortytwoapps/kt-cookies.svg?branch=master)](https://travis-ci.org/fortytwoapps/kt-cookies)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # KT-Cookies
-Based on an awesome cookie management framework in JavaScript, [js-cookie](https://github.com/js-cookie/js-cookie), KT-Cookies allows you to manipulate cookies in an Object Oriented, KotlinJS environment and also define custom classes to give your cookie structure.
+Based on an awesome cookie management library in JavaScript, [js-cookie](https://github.com/js-cookie/js-cookie), KT-Cookies allows you to manipulate cookies in an Object Oriented, KotlinJS environment and also define custom classes to give your cookie structure.
 
 ## Getting Started
 
