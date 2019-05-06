@@ -30,7 +30,7 @@ apply plugin: 'maven-publish'
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId 'com.rcronin'
+            groupId 'com.fortytwoapps.kt-cookies'
             from components.java
             pom.withXml {
                 asNode().dependencies.'*'.findAll() {
@@ -64,10 +64,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-js"
     compile "org.jetbrains.kotlinx:kotlinx-serialization-runtime-js:$serializationVersion"
     testImplementation "org.jetbrains.kotlin:kotlin-test-js"
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.10.3'
 }
 
 node {
