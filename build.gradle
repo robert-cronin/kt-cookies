@@ -15,13 +15,8 @@ buildscript {
     }
 }
 
-plugins {
-    id "com.jfrog.bintray" version "1.7.3"
-}
-
 apply plugin: 'kotlin2js'
 apply plugin: 'org.jetbrains.kotlin.frontend'
-apply plugin: 'kotlin-dce-js'
 apply plugin: 'kotlinx-serialization'
 apply plugin: 'maven-publish'
 
