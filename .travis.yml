@@ -15,25 +15,3 @@ deploy:
   user: $BINTRAY_API_USER
   key: $BINTRAY_API_KEY
   dry-run: false
-
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
-
-sudo: false
-
-os:
-  - linux
-
-script:
-  - ./gradlew test
-
-before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
