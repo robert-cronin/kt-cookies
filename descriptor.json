@@ -21,7 +21,7 @@
 
   "files":
   [
-    {"includePattern": "build/libs/(.*)", "uploadPattern": "com/rcronin/kt-cookies/0.0.1/$1"}
+    {"includePattern": "build/libs/(.*)", "uploadPattern": "com/fortytwoapps/kt-cookies/0.0.1/$1"}
   ],
   "publish": true
 }
