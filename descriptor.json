@@ -1,0 +1,27 @@
+{
+  "package": {
+    "name": "kt-cookies",
+    "repo": "fortytwoapps",
+    "subject": "Kotlin Cookies",
+    "desc": "Kotlin wrapper for js-cookie, an awesome JavaScript library for managing cookies",
+    "website_url": "https://github.com/fortytwoapps/kt-cookies",
+    "issue_tracker_url": "https://github.com/fortytwoapps/kt-cookies/issues",
+    "vcs_url": "https://github.com/fortytwoapps/kt-cookies.git",
+    "licenses": ["MIT"],
+    "labels": ["kotlin", "bintray", "gradle"],
+    "public_download_numbers": false,
+    "public_stats": false
+  },
+
+  "version": {
+    "name": "0.0.1",
+    "released": "2019-05-06",
+    "gpgSign": false
+  },
+
+  "files":
+  [
+    {"includePattern": "build/libs/(.*)", "uploadPattern": "com/rcronin/kt-cookies/0.0.1/$1"}
+  ],
+  "publish": true
+}

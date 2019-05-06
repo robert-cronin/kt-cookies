@@ -1,0 +1,33 @@
+def pomConfig = {
+    licenses {
+        license {
+            name "MIT"
+            url "https://opensource.org/licenses/MIT"
+            distribution "repo"
+        }
+    }
+    developers {
+        developer {
+            id "rcronin"
+            name "Robert Cronin"
+            organization "FortyTwoApps"
+            organizationUrl "https://www.linkedin.com/in/robbiecronin/"
+        }
+    }
+
+    scm {
+        url "https://github.com/fortytwoapps/kt-cookies.git"
+    }
+}
+
+def withPom = { pom ->
+    pom.withXml {
+        def root = asNode()
+        root.appendNode('name', project.name)
+        root.appendNode('description', 'Kotlin/JS wrapper for js-cookie, an awesome JavaScript library for managing cookies')
+        root.appendNode('url', 'https://github.com/fortytwoapps/kt-cookies')
+        root.children().last() + pomConfig
+    }
+}
+
+ext.withPom = withPom
