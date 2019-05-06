@@ -14,14 +14,14 @@
   },
 
   "version": {
-    "name": "0.0.1",
+    "name": "0.0.2",
     "released": "2019-05-06",
     "gpgSign": false
   },
 
   "files":
   [
-    {"includePattern": "build/libs/(.*)", "uploadPattern": "fortytwoapps/kt-cookies/0.0.1/$1"}
+    {"includePattern": "build/libs/(.*)", "uploadPattern": "fortytwoapps/kt-cookies/0.0.2/$1"}
   ],
   "publish": true
 }
