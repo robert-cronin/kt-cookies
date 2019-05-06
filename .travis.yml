@@ -18,4 +18,4 @@ deploy:
   skip_cleanup: true
 
 after_deploy:
-  - echo "
+  - echo "completed_deployment"

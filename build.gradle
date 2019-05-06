@@ -15,6 +15,7 @@ buildscript {
     }
 }
 
+apply plugin: 'kotlin-platform-js'
 apply plugin: 'kotlin2js'
 apply plugin: 'org.jetbrains.kotlin.frontend'
 apply plugin: 'kotlinx-serialization'
