@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.rcronin.kcookies
+package com.fortytwoapps.ktcookies
 
-import com.rcronin.kcookies.js.JsManager
-import com.rcronin.kcookies.util.toJs
+import com.fortytwoapps.ktcookies.js.JsManager
+import com.fortytwoapps.ktcookies.util.toJs
 import kotlinx.serialization.ImplicitReflectionSerializer
 import kotlinx.serialization.UnstableDefault
 import kotlinx.serialization.json.Json

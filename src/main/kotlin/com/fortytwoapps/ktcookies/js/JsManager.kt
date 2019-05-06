@@ -14,23 +14,22 @@
  * limitations under the License.
  */
 
-package com.rcronin.kcookies.util
+package com.fortytwoapps.ktcookies.js
 
-import com.rcronin.kcookies.CookieOptions
-import kotlinx.serialization.UnstableDefault
+external fun require(name: String): dynamic
 
-external class Object
+internal val jsManager = JsManager.init()
 
-inline fun obj(init: dynamic.() -> Unit): dynamic {
-    return (Object()).apply(init)
-}
+internal object JsManager {
+    fun init() {}
 
-@UnstableDefault
-internal fun CookieOptions.toJs(): dynamic {
-    return obj {
-        if (expires != null) this.expires = expires
-        if (path != null) this.path = path
-        if (domain != null) this.domain = domain
-        if (secure != null) this.secure = secure
+    private val jsCookie = try {
+        require("js-cookie/src/js.cookie.js")
+    } catch (e: Throwable) {
+    }
+
+    @Suppress("UnsafeCastFromDynamic")
+    fun getConstructor(): Any {
+        return jsCookie
     }
 }

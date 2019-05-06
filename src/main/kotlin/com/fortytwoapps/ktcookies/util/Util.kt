@@ -14,6 +14,23 @@
  * limitations under the License.
  */
 
-package com.rcronin.kcookies
+package com.fortytwoapps.ktcookies.util
 
-class CookieOptions(var expires: Int? = null, var path: String? = null, var domain: String? = null, var secure: Boolean? = null)
+import com.fortytwoapps.ktcookies.CookieOptions
+import kotlinx.serialization.UnstableDefault
+
+external class Object
+
+inline fun obj(init: dynamic.() -> Unit): dynamic {
+    return (Object()).apply(init)
+}
+
+@UnstableDefault
+internal fun CookieOptions.toJs(): dynamic {
+    return obj {
+        if (expires != null) this.expires = expires
+        if (path != null) this.path = path
+        if (domain != null) this.domain = domain
+        if (secure != null) this.secure = secure
+    }
+}

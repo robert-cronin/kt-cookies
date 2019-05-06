@@ -14,22 +14,6 @@
  * limitations under the License.
  */
 
-package com.rcronin.kcookies.js
+package com.fortytwoapps.ktcookies
 
-external fun require(name: String): dynamic
-
-internal val jsManager = JsManager.init()
-
-internal object JsManager {
-    fun init() {}
-
-    private val jsCookie = try {
-        require("js-cookie/src/js.cookie.js")
-    } catch (e: Throwable) {
-    }
-
-    @Suppress("UnsafeCastFromDynamic")
-    fun getConstructor(): Any {
-        return jsCookie
-    }
-}
+class CookieOptions(var expires: Int? = null, var path: String? = null, var domain: String? = null, var secure: Boolean? = null)
