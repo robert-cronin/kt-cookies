@@ -45,7 +45,7 @@ If you are familiar with [js-cookie](https://github.com/js-cookie/js-cookie), yo
 Create a cookie, valid across the entire site:
 
 ```kotlin
-Cookies.set('name', 'value')
+Cookies.set("name", "value")
 ```
 
 Create a cookie that expires 7 days from now, valid across the entire site:
@@ -67,8 +67,8 @@ Cookies.set("name", "value", CookieOptions(
 Read cookie:
 
 ```kotlin
-val name = Cookies.get('name') // => 'value'
-val nothing = Cookies.get('nothing') // => undefined
+val name = Cookies.get("name") // => 'value'
+val nothing = Cookies.get("nothing") // => undefined
 ```
 
 Read all visible cookies:
