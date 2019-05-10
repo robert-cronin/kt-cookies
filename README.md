@@ -12,18 +12,9 @@ You can explore the source code either by browsing this repo or downloading KT-C
 git clone https://github.com/fortytwoapps/kt-cookies.git
 ```
 
-### Prerequisites
-
-To setup KT-Cookies and start using it in your project, add these lines to build.gradle :
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ### Installing
 
-To setup KT-Cookies, add these lines to build.gradle:
+To setup KT-Cookies and start using it in your project, add these lines to build.gradle:
 
 ```
 repositories {
