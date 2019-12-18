@@ -25,6 +25,9 @@ dependencies {
     implementation "fortytwoapps:kt-cookies:0.0.2"
 }
 ```
+
+### Usage
+
 To start using KT-Cookies in a project, simply import like this:
 
 ```kotlin
@@ -42,7 +45,6 @@ Cookies.set("name", "value")
 Create a cookie that expires 7 days from now, valid across the entire site:
 
 ```kotlin
-
 Cookies.set("name", "value", CookieOptions(expires = 7))
 ```
 
